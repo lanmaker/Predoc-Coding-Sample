@@ -35,6 +35,51 @@ Helper scripts and tools I've developed to improve research workflow efficiency.
 - **Version Control**: Git, GitHub
 - **Documentation**: Markdown, Jupyter Notebooks, R Markdown
 
+## Setup Instructions
+
+### Python Environment
+
+Python scripts require Python 3.8 or higher. To run the Python scripts, install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then test a script:
+
+```bash
+cd data-analysis
+python3 economic_indicators_analysis.py
+```
+
+### R Environment
+
+R scripts require R 4.0 or higher. To run the R scripts, first install R from [CRAN](https://cran.r-project.org/), then install the required packages:
+
+```r
+source("install_packages.R")
+```
+
+Or install packages manually:
+
+```r
+install.packages(c("dplyr", "tidyr", "ggplot2", "broom", "lmtest", "sandwich"))
+```
+
+Then test a script:
+
+```r
+source("data-analysis/survey_data_analysis.R")
+```
+
+### Note on Dependencies
+
+All scripts include inline documentation and can be read to understand the methodology even without running them. The code demonstrates:
+- Clean, well-documented programming style
+- Proper error handling and data validation
+- Reproducible analysis workflows
+- Best practices in research programming
+
 ## How to Navigate This Repository
 
 Each subdirectory contains:
