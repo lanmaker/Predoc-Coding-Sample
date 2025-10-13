@@ -1,7 +1,6 @@
-"""Political discourse analysis pipeline.
+"""Political discourse analysis of Reddit posts.
 
-This module restructures the ECON 6140 final project into a reusable, well
-structured Python script.  The pipeline covers
+This module covers the ECON 6140 final project:
 
 * automated dataset retrieval from Kaggle
 * data cleaning and text preprocessing
@@ -9,16 +8,6 @@ structured Python script.  The pipeline covers
 * feature engineering (TF-IDF, sentiment, topic modelling, meta features)
 * traditional machine-learning model training and evaluation
 * optional transformer-based fine-tuning (guarded behind availability checks)
-
-Usage
------
-Run the full analysis from the command line::
-
-    python political_discourse_analysis.py
-
-or import individual helpers from this module inside a notebook/project.  All
-side effects (downloads, plots, model exports) are controlled via the
-``ProjectConfig`` passed into ``main``.
 """
 
 from __future__ import annotations
